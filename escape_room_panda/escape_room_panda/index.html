@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape Room: Aldea de los Osos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <main class="game">
+    <header class="game__header">
+      <img class="panda" src="logo-panda" alt="Panda guía">
+      <div>
+        <h1>Aldea de los Osos</h1>
+        <p class="subtitle">Escape Room de decisiones</p>
+      </div>
+      <button class="icon-btn" id="musicBtn" type="button" aria-pressed="false" aria-label="Activar música">🔇</button>
+    </header>
+
+    <section id="playScreen">
+      <div class="status">
+        <p id="doorLabel" class="status__label"></p>
+        <div id="lives" class="lives"></div>
+      </div>
+      <ol id="doors" class="doors" aria-hidden="true"></ol>
+
+      <h2 id="question" class="question"></h2>
+      <div id="options" class="options"></div>
+      <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+      <button id="nextBtn" class="btn btn--primary" type="button" hidden>Abrir siguiente puerta</button>
+    </section>
+
+    <section id="endScreen" class="end" hidden>
+      <p id="endEmoji" class="end__emoji"></p>
+      <h2 id="endTitle"></h2>
+      <p id="endText"></p>
+      <button id="restartBtn" class="btn btn--primary" type="button">Jugar de nuevo</button>
+    </section>
+  </main>
+
+  <audio id="bgMusic" src="https://cdn.pixabay.com/audio/2022/03/24/audio_66f30c77aa.mp3" loop preload="none"></audio>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
