@@ -21,10 +21,7 @@ body {
   padding: 72px 16px 24px;
   font-family: 'Nunito', system-ui, sans-serif;
   color: var(--ink);
-  background:
-    linear-gradient(rgba(23, 38, 29, .45), rgba(23, 38, 29, .45)),
-    url('https://i.imgur.com/W6bUzxE.jpg') center / cover fixed no-repeat,
-    linear-gradient(160deg, #3f8f5f, #1f4a33);
+  background: linear-gradient(160deg, #3f8f5f, #1f4a33);
 }
 
 .game {
